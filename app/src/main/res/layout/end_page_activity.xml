@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lastpage"
+    tools:context="com.example.benjo.bakery.startend.EndPageActivity">
+
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/reorderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/billborder"
+            android:text="REORDER"
+            android:textColor="#660033"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/payementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/billborder"
+            android:onClick="open"
+            android:text="PAYMENT"
+            android:textColor="#660033"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/cancleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/billborder"
+            android:text="CANCLE"
+            android:textColor="#660033"
+            android:textSize="30sp" />
+    </LinearLayout>
+</RelativeLayout>
